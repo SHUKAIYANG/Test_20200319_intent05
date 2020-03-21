@@ -65,8 +65,11 @@ Intent filter practice
  intent Filter是用來篩選Intent的條件，用來判斷哪個元件是負責特定 Intent，可設定在元件中，代表什麼樣的
  Intent是元件所負責的。
 
- 每個 intent-filter中至少要定義一個 <action> 元素。
-
+ 每個 intent-filter中至少要定義一個 <action> 元素: android.name。
+  example: <action android:name="MyIntent" />
+	
+-----------------------------------------------------------------------------------
+	
  因為在intent05 project的 MainActivity 有設定一個intent的action為MyIntent，
  所以MyintentActivity 所對應的的action name設定為 MyIntent。
  沒有傳送資料，所以沒有設定data。 
